@@ -50,5 +50,15 @@ namespace APIMiniProject.HTTPManager
             StatusCode = (int)response.StatusCode;
             return response.Content;
         }
+
+        public async Task<string> MakeCrewRequestAsync(string crewId)
+        {
+            var request = new RestRequest();
+            request.AddHeader("Content-Type", "application/json");
+            request.Resource = $"crew/{crewId}";
+            IRestResponse response = await _client.ExecuteAsync(request);
+            StatusCode = (int)response.StatusCode;
+            return response.Content;
+        }
     }
 }
