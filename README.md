@@ -83,5 +83,15 @@ File view:
 
 #### Sprint Retrospective
 
+Positives
+- Completed all MVP Stories
+- Communication
+
+Negatives
+- Time out for other Activities
+- Git Merge problems
+
+Hindsight
+- Review Git Branching before starting
 
 
