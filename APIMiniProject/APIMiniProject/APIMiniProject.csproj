@@ -95,7 +95,6 @@
     <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithValidCapsuleId.cs" />
     <Compile Include="Tests\RocketServiceTests\WhenRocketServiceIsCalled_WithInvalidRocketId.cs" />
     <Compile Include="Tests\RocketServiceTests\WhenRocketServiceIsCalled_WithValidRocketId.cs" />
-    <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithValidCapsuleId - Copy - Copy.cs" />
     <Compile Include="Tests\CapsuleServiceTests\WhenGetLaunchesIsCalled_WithoutARequest.cs" />
     <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithInValidCapsuleId.cs" />
     <Compile Include="Tests\CrewServiceTests\WhenTheCrewServiceIsCalled_WithValidCrewId.cs" />
