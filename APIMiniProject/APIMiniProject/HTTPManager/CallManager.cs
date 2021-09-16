@@ -26,6 +26,12 @@ namespace APIMiniProject.HTTPManager
             var request = new RestRequest();
             request.AddHeader("Content-Type", "application/json");
             request.Resource = $"rockets/{rocketId}";
+  
+        public async Task<string> MakeCapsuleRequestAsync(string capsuleID)
+        {
+            var request = new RestRequest();
+            request.AddHeader("Content-Type", "application/json");
+            request.Resource = $"capsules/{capsuleID}";
 
             IRestResponse response = await _client.ExecuteAsync(request);
 
