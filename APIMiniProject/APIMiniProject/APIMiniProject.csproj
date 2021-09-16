@@ -82,13 +82,14 @@
     <Compile Include="Data\IResponse.cs" />
     <Compile Include="HTTPManager\CallManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\StarlinkSingleSateliteServices.cs" />
+    <Compile Include="Services\StarlinkSingleSateliteService.cs" />
     <Compile Include="Data\StarlinkModel.cs" />
     <Compile Include="Data\CapsuleModel.cs" />
     <Compile Include="Data\RocketModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\RocketService.cs" />
     <Compile Include="Services\CapsuleService.cs" />
+    <Compile Include="Tests\StarlinkTests\WhenStarlinkSingleSateliteServiceIsCalled_WithValidId_.cs" />
     <Compile Include="Services\CrewService.cs" />
     <Compile Include="Tests\CrewServiceTests\WhenTheCrewServiceIsCalled_WithValidCrewId.cs" />
     <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithValidCapsuleId.cs" />
