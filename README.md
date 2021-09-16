@@ -59,7 +59,7 @@ File view:
 
 ## Class Diagrams
 
-
+![image](https://user-images.githubusercontent.com/33132105/133653811-0aacafdd-d9fe-4c0e-8ae4-1ea63fb1f277.png)
 
 ## Sprints
 
