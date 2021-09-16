@@ -28,9 +28,14 @@ namespace APIMiniProject.Services
             CrewSelected = crewId;
             CrewResponse = await CallManager.MakeCrewRequestAsync(crewId);
 
-            JsonResponse = JObject.Parse(CrewResponse);
+            
 
-            CrewResponseDTO.Deserialize(CrewResponse);
+            if (CallManager.StatusCode == 200)
+            {
+                JsonResponse = JObject.Parse(CrewResponse);
+
+                CrewResponseDTO.Deserialize(CrewResponse);
+            }
         }
 
         
