@@ -5,7 +5,7 @@ using APIMiniProject.Data;
 
 namespace APIMiniProject.Tests.StarlinkTests
 {
-    public class WhenStarlinkSingleSateliteService
+    public class WhenStarlinkSingleSateliteServiceIsCalled_WithValidId
     {
         private StarlinkSingleSateliteService _starlinkSingleSateliteServices;
 
@@ -13,7 +13,7 @@ namespace APIMiniProject.Tests.StarlinkTests
         public async Task OneTimeSetUpAsync()
         {
             _starlinkSingleSateliteServices = new StarlinkSingleSateliteService();
-            await _starlinkSingleSateliteServices.MakeRequest("5eed770f096e59000698560e");
+            await _starlinkSingleSateliteServices.MakeRequestAsync("5eed770f096e59000698560e");
         }
 
         [Test]

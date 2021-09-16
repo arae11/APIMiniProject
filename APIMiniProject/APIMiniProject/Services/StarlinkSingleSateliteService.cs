@@ -26,12 +26,16 @@ namespace APIMiniProject.Services
 
         }
 
-        public async Task MakeRequest(string sateliteID)
+        public async Task MakeRequestAsync(string sateliteID)
         {
-            StarlinkResponse = await CallManager.MakeStarLinkRequest(sateliteID);
+            StarlinkResponse = await CallManager.MakeStarLinkRequestAsync(sateliteID);
             SateliteSelected = sateliteID;
-            Json_Response = JObject.Parse(StarlinkResponse);
-            SingleStarlinkDTO.Deserialize(StarlinkResponse);
+            if (CallManager.StatusCode == 200)
+            {
+                Json_Response = JObject.Parse(StarlinkResponse);
+                SingleStarlinkDTO.Deserialize(StarlinkResponse);
+            }
+            
         }
 
     }

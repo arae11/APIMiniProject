@@ -21,11 +21,11 @@ namespace APIMiniProject.HTTPManager
             _client = new RestClient(uri);
         }
 
-        public async Task<string> MakeStarLinkRequest(string sateliteID)
+        public async Task<string> MakeStarLinkRequestAsync(string sateliteID)
         {
             var request = new RestRequest();
             request.AddHeader("Content-Type", "application/json");
-            request.Resource = $"starlink/{sateliteID}";
+            request.Resource = $"/starlink/{sateliteID}";
             IRestResponse response = await _client.ExecuteAsync(request);
             StatusCode = (int)response.StatusCode;
             return response.Content;
