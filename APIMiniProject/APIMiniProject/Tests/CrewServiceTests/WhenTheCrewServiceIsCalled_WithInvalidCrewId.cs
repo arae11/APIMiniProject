@@ -24,8 +24,13 @@ namespace APIMiniProject.Tests.CrewServiceTests
 		}
 
 		[Test]
-
 		public void StatusIs404()
+		{
+			Assert.That(_crewService.CallManager.StatusCode, Is.EqualTo(404));
+		}
+
+		[Test]
+		public void MessageIsNotFound()
 		{
 			Assert.That(_crewService.CallManager.StatusCode, Is.EqualTo(404));
 		}

@@ -90,7 +90,8 @@
     <Compile Include="Services\RocketService.cs" />
     <Compile Include="Services\CapsuleService.cs" />
     <Compile Include="Tests\CrewServiceTests\WhenTheCrewServiceIsCalled_WithInvalidCrewId.cs" />
-    <Compile Include="Tests\StarlinkTests\WhenStarlinkSingleSateliteServiceIsCalled_WithValidId_.cs" />
+    <Compile Include="Tests\StarlinkTests\WhenStarlinkSingleSateliteServiceIsCalled_InvalidId.cs" />
+    <Compile Include="Tests\StarlinkTests\WhenStarlinkSingleSateliteServiceIsCalled_WithValidId.cs" />
     <Compile Include="Services\CrewService.cs" />
     <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithValidCapsuleId.cs" />
     <Compile Include="Tests\RocketServiceTests\WhenRocketServiceIsCalled_WithInvalidRocketId.cs" />
@@ -101,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
