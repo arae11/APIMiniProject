@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using RestSharp;
+using System;
 using System.Threading.Tasks;
 
 namespace APIMiniProject.HTTPManager
@@ -20,6 +21,17 @@ namespace APIMiniProject.HTTPManager
             _client = new RestClient(uri);
         }
 
+        public async Task<string> MakeRocketRequestAsync(string rocketId)
+        {
+            var request = new RestRequest();
+            request.AddHeader("Content-Type", "application/json");
+            request.Resource = $"rockets/{rocketId}";
 
+            IRestResponse response = await _client.ExecuteAsync(request);
+
+            StatusCode = (int)response.StatusCode;
+
+            return response.Content;
+        }
     }
 }
