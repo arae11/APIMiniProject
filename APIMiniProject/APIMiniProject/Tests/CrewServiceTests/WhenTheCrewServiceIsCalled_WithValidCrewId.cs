@@ -31,12 +31,67 @@ namespace APIMiniProject.Tests.CrewServiceTests
 			Assert.That(_crewService.CallManager.StatusCode, Is.EqualTo(200));
 		}
 
-		/*
+		
 		[Test]
-		public void StatusIs200_alt()
+		public void ReturnsTypeOfCrewResponse()
 		{
-			Assert.That(_crewService.CrewResponse)
+			Assert.That(_crewService.CrewResponseDTO.Response, Is.TypeOf<CrewResponse>());
+
 		}
-		*/
+
+		[Test]
+		public void HasCorrectNameDTO()
+		{
+			Assert.That(_crewService.CrewResponseDTO.Response.name, Is.EqualTo("Douglas Hurley"));
+		}
+
+		[Test]
+		public void HasCorrectNameJSON()
+		{
+			Assert.That(_crewService.JsonResponse["name"].ToString(), Is.EqualTo("Douglas Hurley"));
+		}
+
+		[Test]
+		public void HasCorrectAgencyDTO()
+		{
+			Assert.That(_crewService.CrewResponseDTO.Response.agency, Is.EqualTo("NASA"));
+
+		}
+
+
+		[Test]
+		public void HasCorrectAgencyJSON()
+		{
+			Assert.That(_crewService.JsonResponse["agency"].ToString(), Is.EqualTo("NASA"));
+		}
+
+		[Test]
+		public void HasCorrectPilotStatusDTO()
+		{
+			Assert.That(_crewService.CrewResponseDTO.Response.status, Is.EqualTo("active"));
+		}
+
+		[Test]
+		public void HasCorrectPilotStatusJSON()
+		{
+			Assert.That(_crewService.JsonResponse["status"].ToString(), Is.EqualTo("active"));
+		}
+
+		[Test]
+
+		public void HasCorectLaunchCountDTO()
+		{
+			Assert.That(_crewService.CrewResponseDTO.Response.launches.Count(),Is.EqualTo(1));
+
+		}
+
+		[Test]
+
+		public void HasCorectLaunchCountJSON()
+		{
+			Assert.That(_crewService.JsonResponse["launches"].Count(), Is.EqualTo(1));
+
+		}
+
 	}
 }
