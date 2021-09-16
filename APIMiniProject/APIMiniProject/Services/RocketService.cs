@@ -28,8 +28,12 @@ namespace APIMiniProject.HTTPManager
         {
             RocketSelected = rocketId;
             RocketResponse = await CallManager.MakeRocketRequestAsync(rocketId);
-            JsonResponse = JObject.Parse(RocketResponse);
-            RocketResponseDTO.Deserialize(RocketResponse);
+            
+            if (CallManager.StatusCode == 200)
+            {
+                JsonResponse = JObject.Parse(RocketResponse);
+                RocketResponseDTO.Deserialize(RocketResponse);
+            }
         }
     }
 }
