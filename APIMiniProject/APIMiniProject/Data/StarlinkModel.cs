@@ -3,7 +3,6 @@ using System;
 
 namespace APIMiniProject.Data
 {
-
     public class StarlinkSingleResponse : IResponse
     {
         public Spacetrack spaceTrack { get; set; }
@@ -60,5 +59,6 @@ namespace APIMiniProject.Data
         public string TLE_LINE1 { get; set; }
         public string TLE_LINE2 { get; set; }
     }
+
 
 }
