@@ -28,9 +28,20 @@ namespace APIMiniProject.Services
             CapsuleSelected = capsuleID;
             CapsuleResponse = await CallManager.MakeCapsuleRequestAsync(capsuleID);
 
-            JsonResponse = JObject.Parse(CapsuleResponse);
+            if (CallManager.StatusCode == 200)
+            {
+                JsonResponse = JObject.Parse(CapsuleResponse);
+                CapsuleResponseDTO.Deserialize(CapsuleResponse);
+            }
+        }
 
-            CapsuleResponseDTO.Deserialize(CapsuleResponse);
+        public int GetLaunches()
+        {
+            if (CapsuleResponseDTO.Response != null)
+            {
+                return CapsuleResponseDTO.Response.launches.Length;
+            }
+            throw new InvalidOperationException("Please make a valid request first");
         }
 
     }
