@@ -91,8 +91,10 @@
     <Compile Include="Services\CapsuleService.cs" />
     <Compile Include="Tests\StarlinkTests\WhenStarlinkSingleSateliteServiceIsCalled_WithValidId_.cs" />
     <Compile Include="Services\CrewService.cs" />
+    <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithValidCapsuleId - Copy - Copy.cs" />
+    <Compile Include="Tests\CapsuleServiceTests\WhenGetLaunchesIsCalled_WithoutARequest.cs" />
+    <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithInValidCapsuleId.cs" />
     <Compile Include="Tests\CrewServiceTests\WhenTheCrewServiceIsCalled_WithValidCrewId.cs" />
-    <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithValidCapsuleId.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
