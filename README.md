@@ -66,20 +66,21 @@ File view:
 ### Sprint 1
 
 #### Kanban Board at the start of the sprint
-
-
+![Kanban board before](https://user-images.githubusercontent.com/60930006/133648472-8de225d4-2aca-4260-9fe1-f2e399f92266.png)
 
 #### Sprint Goals
-
-
+- Complete MVP
+- Test MVP
 
 #### Kanban Board at the end of the sprint
-
-
+![Kanban board after](https://user-images.githubusercontent.com/60930006/133648619-a2346dc4-cc8b-4eb6-a753-1d0c4b6c172f.png)
 
 #### Sprint Review
-
-
+- Completed MVP
+- Tested MVP
+- Met sprint goals
+- Met project DOD
+- Collaborated well as a team
 
 #### Sprint Retrospective
 
