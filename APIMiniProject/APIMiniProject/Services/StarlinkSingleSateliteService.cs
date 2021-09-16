@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 namespace APIMiniProject.Services
 {
-    class StarlinkSingleSateliteServices
+    class StarlinkSingleSateliteService
     {
         #region Properties
         public CallManager CallManager { get; set; }
@@ -19,7 +19,7 @@ namespace APIMiniProject.Services
         public string StarlinkResponse { get; set; }
         #endregion
 
-        public StarlinkSingleSateliteServices()
+        public StarlinkSingleSateliteService()
         {
             CallManager = new CallManager();
             SingleStarlinkDTO = new DTO<StarlinkSingleResponse>();
