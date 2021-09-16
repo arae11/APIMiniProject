@@ -90,7 +90,7 @@
     <Compile Include="Services\RocketService.cs" />
     <Compile Include="Services\CapsuleService.cs" />
     <Compile Include="Services\CrewService.cs" />
-    <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithValidCapsuleId - Copy - Copy.cs" />
+    <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithValidCapsuleId.cs" />
     <Compile Include="Tests\CapsuleServiceTests\WhenGetLaunchesIsCalled_WithoutARequest.cs" />
     <Compile Include="Tests\CapsuleServiceTests\WhenCapsuleServiceIsCalled_WithInValidCapsuleId.cs" />
   </ItemGroup>
