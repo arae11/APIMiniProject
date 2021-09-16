@@ -13,6 +13,17 @@ Our project definition of done is:
 > - All code submitted to the Main branch
 > - Product owner has reviewed and accepted the code
 
+## Using the Framework
+
+The framework consists of four service classes. Each class has a MakeRequestAsync method that will take in the object's ID and return a DTO and JSON object with data filled by the API. The Capsule service class also includes a method for returning how many launches the selected capsule has undertaken, which can be run after making the API request.
+
+File view:
+> Services
+> >  - CapsuleService.cs
+> >  - CrewService.cs
+> >  - RocketService.cs
+> >  - StarlinkSingleSateliteService.cs
+
 ## Project Deliverables 
 
 1. A complete test framework for the REST API you have chosen. (This needs to test all the data in the RESPONSE and test at least 3 requests). 
