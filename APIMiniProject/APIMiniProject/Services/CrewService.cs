@@ -26,11 +26,13 @@ namespace APIMiniProject.Services
         public async Task MakeRequestAsync(string crewId)
         {
             CrewSelected = crewId;
-            CrewResponse = await CallManager.MakeCapsuleRequestAsync(crewId);
+            CrewResponse = await CallManager.MakeCrewRequestAsync(crewId);
 
             JsonResponse = JObject.Parse(CrewResponse);
 
             CrewResponseDTO.Deserialize(CrewResponse);
         }
+
+        
     }
 }
