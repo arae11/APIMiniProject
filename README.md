@@ -13,6 +13,17 @@ Our project definition of done is:
 > - All code submitted to the Main branch
 > - Product owner has reviewed and accepted the code
 
+## Using the Framework
+
+The framework consists of four service classes. Each class has a MakeRequestAsync method that will take in the object's ID and return a DTO and JSON object with data filled by the API. The Capsule service class also includes a method for returning how many launches the selected capsule has undertaken, which can be run after making the API request.
+
+File view:
+> Services
+> >  - CapsuleService.cs
+> >  - CrewService.cs
+> >  - RocketService.cs
+> >  - StarlinkSingleSateliteService.cs
+
 ## Project Deliverables 
 
 1. A complete test framework for the REST API you have chosen. (This needs to test all the data in the RESPONSE and test at least 3 requests). 
@@ -48,29 +59,40 @@ Our project definition of done is:
 
 ## Class Diagrams
 
-
+![image](https://user-images.githubusercontent.com/33132105/133653811-0aacafdd-d9fe-4c0e-8ae4-1ea63fb1f277.png)
 
 ## Sprints
 
 ### Sprint 1
 
 #### Kanban Board at the start of the sprint
-
-
+![Kanban board before](https://user-images.githubusercontent.com/60930006/133648472-8de225d4-2aca-4260-9fe1-f2e399f92266.png)
 
 #### Sprint Goals
-
-
+- Complete MVP
+- Test MVP
 
 #### Kanban Board at the end of the sprint
-
-
+![Kanban board after](https://user-images.githubusercontent.com/60930006/133648619-a2346dc4-cc8b-4eb6-a753-1d0c4b6c172f.png)
 
 #### Sprint Review
-
-
+- Completed MVP
+- Tested MVP
+- Met sprint goals
+- Met project DOD
+- Collaborated well as a team
 
 #### Sprint Retrospective
 
+Positives
+- Completed all MVP Stories
+- Communication
+
+Negatives
+- Time out for other Activities
+- Git Merge problems
+
+Hindsight
+- Review Git Branching before starting
 
 
