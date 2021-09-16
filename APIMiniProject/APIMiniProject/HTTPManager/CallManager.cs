@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using RestSharp;
+using System;
 using System.Threading.Tasks;
 
 namespace APIMiniProject.HTTPManager
@@ -22,13 +23,29 @@ namespace APIMiniProject.HTTPManager
 
         public async Task<string> MakeStarLinkRequest(string sateliteID)
         {
-            //set up the request
             var request = new RestRequest();
             request.AddHeader("Content-Type", "application/json");
-            //define the request resource path
             request.Resource = $"/starlink/{sateliteID}";
-
-            //Make request, (doesn't instantiate the interface. Just uses as type
+            IRestResponse response = await _client.ExecuteAsync(request);
+            StatusCode = (int)response.StatusCode;
+            return response.Content;
+        }
+      
+        public async Task<string> MakeRocketRequestAsync(string rocketId)
+        {
+            var request = new RestRequest();
+            request.AddHeader("Content-Type", "application/json");
+            request.Resource = $"rockets/{rocketId}";
+            IRestResponse response = await _client.ExecuteAsync(request);
+            StatusCode = (int)response.StatusCode;
+            return response.Content;
+        }
+      
+        public async Task<string> MakeCapsuleRequestAsync(string capsuleID)
+        {
+            var request = new RestRequest();
+            request.AddHeader("Content-Type", "application/json");
+            request.Resource = $"capsules/{capsuleID}";
             IRestResponse response = await _client.ExecuteAsync(request);
             StatusCode = (int)response.StatusCode;
             return response.Content;

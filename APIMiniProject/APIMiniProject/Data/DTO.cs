@@ -15,6 +15,5 @@ namespace APIMiniProject.Data
         {
             Response = JsonConvert.DeserializeObject<ResponseType>(response);
         }
-
     }
 }

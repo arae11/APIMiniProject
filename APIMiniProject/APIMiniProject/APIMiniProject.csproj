@@ -79,10 +79,16 @@
     <Compile Include="AppConfigReader.cs" />
     <Compile Include="Data\DTO.cs" />
     <Compile Include="Data\IResponse.cs" />
-    <Compile Include="Data\StarlinkModel.cs" />
     <Compile Include="HTTPManager\CallManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\StarlinkSingleSateliteServices.cs" />
+    <Compile Include="Data\StarlinkModel.cs" />
+    <Compile Include="Data\CapsuleModel.cs" />
+    <Compile Include="Data\Model.cs" />
+    <Compile Include="Data\RocketModel.cs" />
+    <Compile Include="HTTPManager\CallManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\RocketService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
