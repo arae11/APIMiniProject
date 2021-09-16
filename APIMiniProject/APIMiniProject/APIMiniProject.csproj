@@ -89,6 +89,7 @@
     <Compile Include="HTTPManager\CallManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\RocketService.cs" />
+    <Compile Include="Services\CapsuleService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
