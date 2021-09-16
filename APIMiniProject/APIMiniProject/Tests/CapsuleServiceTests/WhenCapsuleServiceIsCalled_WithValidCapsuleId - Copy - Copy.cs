@@ -67,5 +67,11 @@ namespace APIMiniProject.Tests.CapsuleServiceTests
         {
             Assert.That(_capsuleService.JsonResponse["type"].ToString(), Is.EqualTo("Dragon 1.0"));
         }
+
+        [Test]
+        public void GetAmountOfLandings_ReturnsCorrectAmount()
+        {
+            Assert.That(_capsuleService.GetLaunches(), Is.EqualTo(1));
+        }
     }
 }
