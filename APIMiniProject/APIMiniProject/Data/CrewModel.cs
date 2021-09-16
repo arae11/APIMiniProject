@@ -3,7 +3,7 @@
 namespace APIMiniProject.Data
 {
 
-	public class CrewResponse :Iresponse 
+	public class CrewResponse :IResponse 
 	{
 		public string name { get; set; }
 		public string agency { get; set; }
